@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/ds-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>INTERACTIVE PRICING component</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <header class="header">
+          <h2 class="header__title">Simple, traffic-based pricing</h2>
+          <p class="header__text">Sign-up for our 30-day trial. No credit card required.</p>
+        </header>
+        <div class="card">
+          <div class="card__header">
+            <p class="card__views"><span id="views">100K </span>Pageviews</p>
+            <input class="input-slider" id="input-slider" type="range" min="0" value="2" max="4" name="slider">
+            <div class="card__payment">
+              <p class="card__price">$<span id="price">16</span>.00</p>
+              <p class="card__time"> / month</p>
+            </div>
+            <div class="card__billing">
+              <p class="card__month">Monthly Billing</p>
+              <div class="toggler active" id="toggler">
+                <div class="toggler-bar" id="toggler-bar">
+                  <div class="toggler-ball" id="toggler-ball"></div>
+                </div>
+              </div>
+              <p class="card__year">Yearly Billing <span class="card__disc">-25%</span></p>
+            </div>
+          </div>
+          <div class="card__trial">
+            <ul class="card__list">
+              <li class="card__item"><img class="card__icon" src="assets/images/icon-check.svg" alt="icon-check">
+                <p class="card__promo">Unlimited websites</p>
+              </li>
+              <li class="card__item"><img class="card__icon" src="assets/images/icon-check.svg" alt="icon-check">
+                <p class="card__promo">100% data ownership</p>
+              </li>
+              <li class="card__item"><img class="card__icon" src="assets/images/icon-check.svg" alt="icon-check">
+                <p class="card__promo">Email reports</p>
+              </li>
+            </ul><a class="card__cta" href="#">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><small class="copy"><img class="copy__logo" src="assets/images/ds-logo.png" alt="LOGO">
+        <div class="copy__info">© Copyright 2021 <a class="copy__link" href="https://darwinsanchez9018.github.io/Frontend-Porfolio/" target="_blank">Darwin Sánchez </a>All rights reserved.</div></small></footer>
+    <script src="js/scripts-dist.js"></script>
+  </body>
+</html>

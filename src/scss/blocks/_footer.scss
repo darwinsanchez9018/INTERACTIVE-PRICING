@@ -1,0 +1,31 @@
+.footer {
+    color: var(--text-color);
+    padding: 5rem 1rem 2rem 1rem;
+}
+
+
+.copy {
+    text-align: center;
+
+    &__logo {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: .5rem;
+    }
+
+    &__info {
+        margin: 0;
+
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--slider-ball);
+
+        @include hover {
+            color: var(--slider-bar);
+        }
+    }
+}

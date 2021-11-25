@@ -1,0 +1,30 @@
+.toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-bar {
+        width: 45px;
+        min-width: 45px;
+        height: 22px;
+        border-radius: 20px;
+        background-color: var(--toggler-bg);
+
+        @include hover {
+            background-color: var(--slider-bar);
+            cursor: pointer;
+        }
+        
+    }
+
+    &-ball {
+        margin: 4px;
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        background-color: var(--card-bg);
+        transition: 0.7s;
+
+    }
+
+}

@@ -1,0 +1,154 @@
+.card {
+    margin: 0;
+    padding: 2rem 0 1rem 0;
+    background-color: var(--card-bg);
+    border-radius: .5rem;
+    box-shadow: 0 5px 20px -5px rgba($color: hsl(227, 35%, 25%), $alpha: .4);
+
+    @include tablet {
+        position: relative;
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        // padding: 4rem 3rem 2rem 3rem;
+        padding: 4rem 0 2rem 0;
+    }
+
+    &__header {
+        border-bottom: 1.5px solid var(--toggler-bg);
+        padding-bottom: 2.5rem;
+
+    }
+
+    &__views {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin-bottom: 2.5rem;
+
+        @include tablet {
+            text-align: left;
+            font-size: .9rem;
+            padding-left: 3rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__payment {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        justify-content: center;
+        @include tablet {
+            position: absolute;
+            top: .5rem;
+            right: 3rem;
+        }
+    }
+
+    &__price {
+        font-size: 2rem;
+        font-weight: 800;
+        color:var(--texts-and-cta);
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+
+    // BILL section ---------
+    &__billing {
+        display: inline-flex;
+        align-items: center;
+        gap: .7rem;
+        margin-right: -4vmax;
+        @include tablet {
+            margin-top: 3rem;
+            margin-right: -6.5vmax;
+        }
+    }
+    &__month,
+    &__year {
+        margin: 0;
+        font-size: .7rem;
+    }
+    &__disc {
+        background-color: var(--disc-bg);
+        color: var(--disc-text);
+        font-size: .65rem;
+        font-weight: 800;
+        padding: .2rem .5rem;
+        margin-left: .2rem;
+        border-radius: 1rem;
+
+        @include tablet {
+            // Oculta el contenido OJO: sin perder su sitio, solo se hace INVISIBLE
+            visibility: hidden;
+
+            &::after {
+                // Hacemos VISIBLE el nuevo contenido
+                content: "25% discount";
+                visibility: visible;
+                background-color: var(--disc-bg);
+                border-radius: 1rem;
+                padding: .2rem .5rem;
+                margin-left: -2rem;
+            }
+        }
+    }
+
+
+
+    &__trial {
+        margin: 2rem 0;
+
+        @include tablet {
+            margin: 2rem 0 0rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3rem;
+        }
+    }
+    &__list {
+        @include reset-list;
+        margin-bottom: 2rem;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet {
+            justify-content: start;
+        }
+    }
+
+    &__icon {
+        margin-right: 1rem;
+    }
+
+    &__promo {
+        margin: .3rem 0;
+        font-size: .8rem;
+    }
+
+
+    &__cta {
+        text-decoration: none;
+        background-color: var(--texts-and-cta);
+        color: var(--cta-text);
+        padding: .7rem 2.7rem;
+        border-radius: 5rem;
+        font-size: .8rem;
+
+        @include hover {
+            color: var(--bg);
+        }
+    }
+
+}

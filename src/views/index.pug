@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="assets/images/ds-icon.ico" type="image/x-icon")
+        link(rel="stylesheet", href="css/styles.css")
+
+        title INTERACTIVE PRICING component
+    body
+        main.main
+            .wrapper
+                header.header
+                    h2.header__title Simple, traffic-based pricing
+                    p.header__text Sign-up for our 30-day trial. No credit card required.
+
+                .card
+                    .card__header
+                        p.card__views
+                            span#views 100K 
+                            |Pageviews
+
+                        input#input-slider.input-slider(type="range", min="0", value="2", max="4", name="slider")
+
+                        .card__payment
+                            p.card__price $
+                                span#price 16
+                                |.00
+                            p.card__time  / month
+
+                        .card__billing
+                            p.card__month Monthly Billing
+                            .toggler.active#toggler
+                                .toggler-bar#toggler-bar
+                                    .toggler-ball#toggler-ball
+                            p.card__year Yearly Billing 
+                                span.card__disc -25%
+
+                    .card__trial
+                        ul.card__list
+                            li.card__item
+                                img(src="assets/images/icon-check.svg", alt="icon-check").card__icon
+                                p.card__promo Unlimited websites
+                            li.card__item
+                                img(src="assets/images/icon-check.svg", alt="icon-check").card__icon
+                                p.card__promo 100% data ownership
+                            li.card__item
+                                img(src="assets/images/icon-check.svg", alt="icon-check").card__icon
+                                p.card__promo Email reports
+
+                        a(href="#").card__cta Start my trial
+
+
+
+        footer.footer
+            small.copy
+                img(src="assets/images/ds-logo.png", alt="LOGO").copy__logo
+                .copy__info © Copyright 2021 
+                    a(href="https://darwinsanchez9018.github.io/Frontend-Porfolio/" target="_blank").copy__link Darwin Sánchez 
+                    |All rights reserved.
+
+
+        script(src="js/scripts-dist.js")

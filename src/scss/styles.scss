@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+
+@import "config/variables";
+@import "base/base";
+@import "mixins/reset-list";
+@import "mixins/breakpoints";
+@import "mixins/hover";
+
+@import "blocks/main";
+@import "blocks/wrapper";
+@import "blocks/header";
+@import "blocks/card";
+@import "blocks/slider-price";
+@import "blocks/toggler";
+@import "blocks/footer";
